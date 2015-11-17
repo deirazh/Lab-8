@@ -7,13 +7,12 @@
       }else{
         $scope.message("you fail");
       }
-      alert(" in angular now");
     }
   });  
 </script>
 <form>
-<label>Input test score</lable><input />
+<label>Input test score</lable><input ng-model="score"/>
 <button ng"click="calculate()">Get Status</button>
-<p>you passed!</p>
+<p>{{message}}</p>
 
 </form>
